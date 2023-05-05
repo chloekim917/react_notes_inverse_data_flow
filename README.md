@@ -1,1 +1,1 @@
-# react_notes_inverse_data_flow
+Note on sending data from a child component(PetForm) to a parent component(App).
