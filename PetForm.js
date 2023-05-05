@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { getNextId } from './data'
 
 function PetForm({ onAddPet }) {
+    // onAddPet prop
     
     const [name, setName] = useState("")
     const [image, setImage] = useState("")
@@ -16,6 +17,7 @@ function PetForm({ onAddPet }) {
         }
         
         onAddPet(newPet)
+        // this send data upward
     }
     
     return (

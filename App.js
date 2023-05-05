@@ -36,6 +36,7 @@ function App() {
   function addPet(petObj) {
     console.log("in App", petObj)
     setPets([...pets, petObj])
+    // callback function(unction passed as an argument to another function) that allows inverse data flow
   }
 
   return (
@@ -43,6 +44,7 @@ function App() {
       <Header user={user} setUser={setUser} />
       {user ? <p>Welcome, {user.username}</p> : <em>Please log in!</em>}
       <PetForm onAddPet={addPet} />
+      {/* Where it's called */}
       <main>{petCards}</main>
     </div>
   );
